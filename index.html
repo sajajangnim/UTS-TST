@@ -33,15 +33,9 @@
         <input type="text" id="lname" name="lname">
     </form>
 
-    <button class="input" style="font-weight: bold; color: white; font-family:'Courier New', Courier, monospace; font-size: 20px; border: none; background-color: rgb(97, 49, 165);">
+    <button onclick="function()" style="font-weight: bold; color: white; font-family:'Courier New', Courier, monospace; font-size: 20px; border: none; background-color: rgb(97, 49, 165);">
         Enter
 
-        <script>
-            (async function() {
-              let { text } = await( await fetch(`/api/message`)).json();
-              document.querySelector('#name').textContent = text;
-            }())
-          </script>
 
     </button>
 
